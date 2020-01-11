@@ -10,6 +10,7 @@ public class Plansza {
     private int pozycjaGraczaX, pozycjaGraczaY;
     private int polePodGraczem = 0;
     public int tura = 0;
+    public String nazwaPlanszy;
 
     public Plansza(int x, int y) {
         this.x = x;
@@ -108,7 +109,7 @@ public class Plansza {
                 return true;
             }
         }
-        return true;
+        return false;
     }
 
     private boolean sprawdzKolizjeSkrzyni(Kierunek kierunek){
@@ -148,9 +149,12 @@ public class Plansza {
         return true;
     }
 
-    public void wczytajPlanszeZPliku(String nazwaPliku) { //well coś nie działa
+    public void wczytajPlanszeZPliku(String nazwaPliku) {
         try {
             Scanner odczyt = new Scanner(new File("src\\Plansze\\" + nazwaPliku));
+            tura = 0;
+            polePodGraczem = 0;
+            nazwaPlanszy = nazwaPliku;
             x = odczyt.nextInt();
             y = odczyt.nextInt();
             plansza = new Integer[x][y];
@@ -181,6 +185,22 @@ public class Plansza {
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
+    }
+
+    public void restart(){
+        wczytajPlanszeZPliku(nazwaPlanszy);
+    }
+
+    public boolean sprawdzCzyWygrana(){
+        for (int i = 0; i < x; i++) {
+            for (int j = 0; j < y; j++) {
+                if(plansza[i][j] == 2 && bazowaPlansza[i][j] != 4){
+                    return false;
+                }
+            }
+        }
+
+        return true;
     }
 
     public int getX() {

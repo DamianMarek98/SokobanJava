@@ -18,7 +18,7 @@ public class Panel extends JPanel {
         this.wysokosc=x;
         this.szerokosc=y;
         this.plansza = plansza;
-        setPreferredSize(new Dimension(1280, 720));
+        setPreferredSize(new Dimension(900, 600));
         setVisible(true);
         File celGrafika = new File("src\\Grafika\\cel.bmp");
         File postacGrafika = new File("src\\Grafika\\postac.bmp");
@@ -41,8 +41,7 @@ public class Panel extends JPanel {
     protected void paintComponent(Graphics g){
         super.paintComponent(g);
         Graphics2D g2d = (Graphics2D) g;
-        Rectangle2D rectangle = new Rectangle2D.Double(10, 10, szerokosc*30, wysokosc*30);
-        int pozycjaX = ((1280-(36*(plansza.x)))/2)+18, pozycjaY = 50;
+        int pozycjaX = ((900-(36*(plansza.x)))/2)+18, pozycjaY = 50;
         for (int i = 0; i < plansza.x; i++) {
             for (int j = 0; j < plansza.y; j++) {
                 if(plansza.plansza[i][j] == 0){
@@ -58,9 +57,14 @@ public class Panel extends JPanel {
                 }
                 pozycjaX += 36;
             }
-            pozycjaX = ((1280-(36*(plansza.x)))/2)+18;
+            pozycjaX = ((900-(36*(plansza.x)))/2)+18;
             pozycjaY += 36;
-            g.drawString("Tura: "+ plansza.tura, 630, 22);
+        }
+        if(plansza.sprawdzCzyWygrana()){
+            g.drawString("Wygrano w: "+ plansza.tura + " turach!", 410, 22);
+        } else {
+            g.drawString("Tura: "+ plansza.tura, 430, 22);
+            g.drawString("Poziom: "+ plansza.nazwaPlanszy.substring(4,5), 430, 35);
         }
     }
 }
