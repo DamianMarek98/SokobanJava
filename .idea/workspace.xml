@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67478bde-779d-4f04-9431-f65dcad8d5d6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Interfejs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interfejs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Panel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Panel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Plansza.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Plansza.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Plansze/pole.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Plansze/pole2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Plansze/pole2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Plansze/pole3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Plansze/pole3.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Plansze/test.txt" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,11 +22,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Panel.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="350">
-              <caret line="66" column="71" selection-start-line="66" selection-start-column="71" selection-end-line="66" selection-end-column="71" />
+              <caret line="66" column="81" selection-start-line="66" selection-start-column="81" selection-end-line="66" selection-end-column="81" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -57,11 +50,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Interfejs.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="707">
-              <caret line="108" column="53" lean-forward="true" selection-start-line="108" selection-start-column="53" selection-end-line="108" selection-end-column="53" />
+            <state relative-caret-position="272">
+              <caret line="25" column="22" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -97,9 +90,9 @@
         <option value="$PROJECT_DIR$/src/Plansze/ElementPlanszy.java" />
         <option value="$PROJECT_DIR$/src/plansza.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
-        <option value="$PROJECT_DIR$/src/Interfejs.java" />
         <option value="$PROJECT_DIR$/src/Plansza.java" />
         <option value="$PROJECT_DIR$/src/Panel.java" />
+        <option value="$PROJECT_DIR$/src/Interfejs.java" />
       </list>
     </option>
   </component>
@@ -182,12 +175,12 @@
       <workItem from="1578615082122" duration="60000" />
       <workItem from="1578615260706" duration="10000" />
       <workItem from="1578673338685" duration="1360000" />
-      <workItem from="1578766858172" duration="4849000" />
+      <workItem from="1578766858172" duration="5298000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13483000" />
+    <option name="totallyTimeSpent" value="13932000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -283,16 +276,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Interfejs.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="707">
-          <caret line="108" column="53" lean-forward="true" selection-start-line="108" selection-start-column="53" selection-end-line="108" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Plansza.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -310,7 +293,17 @@
     <entry file="file://$PROJECT_DIR$/src/Panel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="350">
-          <caret line="66" column="71" selection-start-line="66" selection-start-column="71" selection-end-line="66" selection-end-column="71" />
+          <caret line="66" column="81" selection-start-line="66" selection-start-column="81" selection-end-line="66" selection-end-column="81" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Interfejs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="25" column="22" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

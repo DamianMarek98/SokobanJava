@@ -23,7 +23,7 @@ public class Interfejs extends JFrame implements ActionListener, KeyListener, Mo
         setFocusable(true);
         setFocusTraversalKeysEnabled(false);
         stworzPrzyciski();
-        setLocation(320,180);
+        setLocation(510,180);
 
         add(panel);
         pack();
