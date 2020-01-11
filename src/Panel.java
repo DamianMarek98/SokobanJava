@@ -62,6 +62,8 @@ public class Panel extends JPanel {
         }
         if(plansza.sprawdzCzyWygrana()){
             g.drawString("Wygrano w: "+ plansza.tura + " turach!", 410, 22);
+            String czas = String.format("%.2f",(System.currentTimeMillis() - plansza.czasRozpoczeciaPlanszy)/1000F);
+            g.drawString("Czas: " + czas +"s", 430, 35);
         } else {
             g.drawString("Tura: "+ plansza.tura, 430, 22);
             g.drawString("Poziom: "+ plansza.nazwaPlanszy.substring(4,5), 430, 35);

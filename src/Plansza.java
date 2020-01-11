@@ -11,6 +11,7 @@ public class Plansza {
     private int polePodGraczem = 0;
     public int tura = 0;
     public String nazwaPlanszy;
+    public long czasRozpoczeciaPlanszy;
 
     public Plansza(int x, int y) {
         this.x = x;
@@ -155,6 +156,7 @@ public class Plansza {
             tura = 0;
             polePodGraczem = 0;
             nazwaPlanszy = nazwaPliku;
+            czasRozpoczeciaPlanszy = System.currentTimeMillis();
             x = odczyt.nextInt();
             y = odczyt.nextInt();
             plansza = new Integer[x][y];
